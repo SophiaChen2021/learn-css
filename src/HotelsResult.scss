@@ -1,0 +1,291 @@
+
+.HotelsResult {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 313px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+  cursor: pointer;
+}
+
+.pictureInfo {
+  width: 28%;
+}
+
+.basicInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  border-right: 1px solid rgba(37,32,31,.3);
+  padding: 16px;
+  overflow: hidden;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: flex-start;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 16px;
+  box-shadow: inset 0 1px 0 0 #eff1f2;
+  /* border-top: 0.5px solid rgba(37,32,31,.3); */
+}
+
+.otherRates {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rateRow {
+  display: flex;
+  width: 25%;
+  padding-left: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #161616; 
+  &:not(:last-child) {
+    box-shadow: inset -1px 0 0 0 #c2c9cd;
+  };
+}
+
+.rateName {
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.ratePrice {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: row;
+  width: 22%;
+  padding: 16px;
+}
+
+.mainRate {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.lowestPrice {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+.foundHotel {
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.priceBadge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  border-radius: 0.25rem;
+  background-color: #e0e3e5;
+}
+
+.loggedPrice {
+  padding: 0.25rem 0.75rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.priceNumber {
+  margin-top: 8px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.priceSummary {
+  margin-bottom: 0.25rem;
+  color: #545860;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.priceInclude {
+  margin-bottom: 0.5rem;
+  color: #545860;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.freeCancel {
+  color: #161616;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.breakfast {
+  color: #161616;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.ctaButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+  margin-right: -0.25rem;
+}
+
+.button {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #05203c;
+}
+
+.link {
+  text-decoration: none;      
+}
+
+.header {
+  display: flex;
+  line-height: 32px;  
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin-right: 16px;
+}
+
+.star {
+  display: inline;
+  fill: #f55d42
+}
+
+.distance {
+  display: flex;
+  max-height: 3rem;
+  overflow: hidden;
+  word-break: break-word;
+  line-height: 24px;  
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.distanceIcon {
+  margin-right: 8px;
+}
+
+.rating {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 16px;
+  align-items: baseline;
+  color: #161616;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ratingValue {
+  display: flex;
+  padding-right: 8px;
+  align-items: baseline;
+}
+
+.ratingScale {
+  color: #545860;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.rating_subtitle {
+  color: #545860;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.confidentMsg {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1.25rem;
+  margin-bottom: 32px;
+  background-color: #e0e3e5;
+  border-radius: 0.25rem;
+  color: #161616;
+  fill: #161616;
+}
+
+.confidentItem {
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.icon {
+  align-items: center;
+  padding-top: 0.25rem;
+}
+
+.location {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+.msgRating {
+  margin-left: 0.5rem;
+  color: #161616;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.ratingScope {
+  font-size: 0.75rem;
+}
